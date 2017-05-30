@@ -2,6 +2,10 @@
 Downlaod files inline on telelgram
 
 A simple way to download files using url on telegram with peogress
+# Requirements 
+php 7.0+
+php-curl
+php-mbstring
 
 # How To start :
 edit bot.php and set token and set file url then set dest channel to upload files to it
