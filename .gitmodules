@@ -1,3 +1,6 @@
 [submodule "simplePhpBot"]
 	path = core
 	url = https://github.com/smaznet/simplePhpBot.git
+[submodule "core"]
+	path = core
+	url = https://github.com/smaznet/simplePhpBot
