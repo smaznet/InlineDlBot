@@ -8,7 +8,7 @@
 
 $update=json_decode(file_get_contents("php://input"));
 $token="YourBotToken";
-$thisFileUrl="/bot.php"; //SET YOUR URL
+$thisFileUrl="http://example.com/path/to/bot.php"; //SET YOUR URL
 $FilesCh="destCh"; // enter a channel to download files without @
 
 require ("core/telegramhelper.php");
@@ -47,7 +47,6 @@ if ($allSteps==1&&$step==1){
 function downloadFile($url){
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
-//curl_setopt($ch, CURLOPT_BUFFERSIZE,128);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_PROGRESSFUNCTION, 'progress');
     curl_setopt($ch,CURLOPT_FOLLOWLOCATION,true);
@@ -90,7 +89,7 @@ json_encode(
                 ]]))]);
 
         if (!$res['ok']){
-            //  $Tl->sendToMe(json_encode($res));
+   
             if (strpos($res['description'],"MESSAGE_ID_INVALID")!==false){
                 curl_close($resource);
                 exit(0);
