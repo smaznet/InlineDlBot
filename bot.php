@@ -8,7 +8,8 @@
 
 $update=json_decode(file_get_contents("php://input"));
 $token="YourBotToken";
-$thisFileUrl="http://example.com/path/to/bot.php"; //SET YOUR URL
+$uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+$thisFileUrl='https://' . $_SERVER['HTTP_HOST'] . $uri_parts[0]; 
 $FilesCh="destCh"; // enter a channel to download files without @
 
 require ("core/telegramhelper.php");
