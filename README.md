@@ -1,3 +1,5 @@
+[![StyleCI](https://styleci.io/repos/92814011/shield?branch=master)](https://styleci.io/repos/92814011)
+[![Telegram](http://trellobot.doomdns.org/telegrambadge.svg)](https://telegram.me/smostafaaz)
 # InlineDlBot
 Downlaod files inline on telelgram
 
@@ -23,5 +25,5 @@ git submodule update --init --recursive
 
 **note :** change line 174 on bot.php and set your user id or remove that to work for all users
 
-[![Telegram](http://trellobot.doomdns.org/telegrambadge.svg)](https://telegram.me/smostafaaz)
+
 
