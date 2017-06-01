@@ -18,6 +18,7 @@ git submodule update --init --recursive
 
 + edit bot.php and set token and set file url then set dest channel to upload files to it
 + goto to botfather and enable `/setinlinefeedback` and `/setinline`
+
 **note :** bot should be admin on dest channel to sending files
 
 **note :** change line 174 on bot.php and set your user id or remove that to work for all users
