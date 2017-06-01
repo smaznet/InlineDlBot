@@ -3,9 +3,9 @@ Downlaod files inline on telelgram
 
 A simple way to download files using url on telegram with peogress
 # Requirements 
-php 7.0+
-php-curl
-php-mbstring
+1. php 7.0+
+2. php-curl
+3. php-mbstring
 
 # How To start :
 
